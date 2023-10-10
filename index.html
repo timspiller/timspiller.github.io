@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- Script in the head tag -->
+    <script src="https://cdn.prod.us.five9.net/static/stable/chat/wrapper/index.js"></script>
+</head>
+<body>
+
+    <!-- Script in the body tag -->
+    <script>
+        F9.Chat.Wrapper.init({
+          cdn: 'prod',
+          useBusinessHours: false,
+          languages: {"enabled":false,"backgroundColor":"#65758e"},
+          l10n: {"en":{"messenger":{"customText":{}},"systemMessages":{"transferredToParticipant":"The chat has been transferred to {name}.","transferredToGroup":"That chat has been transferred to group {group}."},"captureFields":[{"k":"name","l":"Name","p":"Enter your name..."},{"k":"email","l":"Email Address","p":"Enter your email..."},{"k":"Question","l":"Question","p":"What can we help you with today?"}]}},
+          prepopulatedFields: [{"k":"campaign","v":"z_Chatbot_Studio_7"}],
+          messenger: {"integrationId":"a5b17237-3c54-42e4-9d3d-dc93a19b7f9c","soundNotificationEnabled":true,"transcriptPrintingEnabled":false,"menuItems":{"imageUpload":true,"fileUpload":true,"shareLocation":true},"embedded":false,"businessName":"Travel, Inc","businessIconUrl":"https://www.travelinc.com/wp-content/uploads/2021/06/TI_Logo_White_Web_150ppi-2.png","browserStorage":"sessionStorage","fixedHeader":false,"displayStyle":"button","customColors":{"brandColor":"65758e","conversationColor":"0099ff","actionColor":"0099ff"}},
+          clearMessagesTimeout: 3
+        });
+        </script>
+
+    <!-- Other content can go here -->
+
+</body>
+</html>
